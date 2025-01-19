@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article Page</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function adjustHeight() {
+            const body = document.body;
+            const screenWidth = window.innerWidth;
+    
+            if (screenWidth > 1024) {
+                body.style.height = "160vh"; // Larger screens
+            } else if (screenWidth > 768 && screenWidth <= 1024) {
+                body.style.height = "275vh"; // Medium screens
+            } else {
+                body.style.height = "300vh"; // Smaller screens
+            }
+        }
+    
+        // Run the function on load and resize
+        adjustHeight();
+        window.addEventListener("resize", adjustHeight);
+    </script>
 </head>
 <body>
     <div class="container">
