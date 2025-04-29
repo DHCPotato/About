@@ -56,6 +56,13 @@ body {
     font-weight: 600;
 }
 
+.article-body h2 {
+    color: #e0d9cf
+}
+.article-body ul {
+    color: #e0d9cf
+}
+
 .article-body p {
     font-size: 1rem;
     line-height: 1.6;
@@ -92,7 +99,7 @@ body {
     }
 }
 .imgright {
-    max-width: 40%;
+    max-width: 50%;
     max-height: 50%;
     margin: 0 15px 15px 0;
     float: right;
